@@ -49,7 +49,7 @@ export default function App () {
           <div className='main'>
             <div>
               <p className='label'>Meat weight:</p>
-              <input className='inputWeight' onChange={onChangeWeight} value={weight>0 && weight} type='number' inputmode="numeric" pattern="[0-9]*"></input>
+              <input className='inputWeight' onChange={onChangeWeight} value={weight>0 && weight} type='number'></input>
               <p className='lbsLabel'>lbs</p>
             </div>
             <table className='amountTable'>
