@@ -15,7 +15,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 .ingredientInput{
    border: 1px solid #000000;
-   border-radius: 10px;
    height: 45px;
    width: 120px;
    padding: 0px 16px;
@@ -39,7 +38,7 @@ input[type=number]::-webkit-outer-spin-button {
    cursor: pointer;
    position: relative;
    right: 30px;
-   top: 1px;
+   top: 2.5%;
    width: 40px;
    height: 47px;
    border: solid 1px black;
@@ -56,7 +55,7 @@ input[type=number]::-webkit-outer-spin-button {
    cursor: pointer;
    position: relative;
    left: 30px;
-   top: 1px;
+   top: 2.5%;
    width: 40px;
    height: 47px;
    border: solid 1px black;
@@ -207,10 +206,4 @@ p.percent{
     color: #73796e9d;
     font-size: 16px;
    }
- }
-
- @media (max-width: 380px){
-  .plus, .minus{
-    top: 2px;
-  }
  }
