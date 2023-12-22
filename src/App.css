@@ -206,8 +206,10 @@ p.percent{
     color: #73796e9d;
     font-size: 16px;
    }
+ }
 
-   .plus{
+ @media (max-width: 395px){
+  .plus, .minus{
     top: 2px;
    }
  }
