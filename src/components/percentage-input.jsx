@@ -2,7 +2,7 @@ export default function PercentageInput ({ name, value, onChange, onClickUp, onC
 
     return(
         <div className="inputParent">
-        <label className="inputLabel">{name}</label><button className='minus' id={name} onClick={onClickDown}>-</button><input value={value} onChange={onChange} className='ingredientInput' name={name} type='number'></input><button className='plus' id={name} onClick={onClickUp}>+</button>
+        <label className="inputLabel">{name}</label><button className='minus' id={name} onClick={onClickDown}>-</button><input value={value} onChange={onChange} className='ingredientInput' name={name} type='number'></input><button className='plus' id={name} onClick={onClickUp}>+</button><p className="percent">%</p>
         </div>
     )
 }

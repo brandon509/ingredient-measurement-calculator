@@ -45,9 +45,9 @@ export default function App () {
 
     return(
         <div className='th'>
-          <div className='header'><h1>Sausage Calculator</h1></div>
+          <div className='header'><h1>Measurement Calculator</h1></div>
           <div className='main'>
-            <div>
+            <div className='thing'>
               <label for='weight' className='weightLabel'>Weight</label>
               <input id='weight' className='inputWeight' onChange={onChangeWeight} value={weight>0 && weight} type='number'></input>
               <p className='lbsLabel'>lbs</p>
