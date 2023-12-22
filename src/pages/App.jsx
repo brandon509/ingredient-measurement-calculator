@@ -5,7 +5,7 @@ export default function App () {
 
     const [weight, setWeight] = useState(0)
     const [ingredients, setIngredients] = useState({
-        cayen: 5,
+        cayenne: 5,
         salt: 10,
         pepper: 15,
         onion: 10
@@ -63,8 +63,8 @@ export default function App () {
                 <tbody>
                   <tr>
                         <td className='item'>Cayenne</td>
-                        <td className='inputBox'><PercentageInput name='cayenne' value={ingredients.cayen>0 && ingredients.cayen} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
-                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.cayen/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
+                        <td className='inputBox'><PercentageInput name='cayenne' value={ingredients.cayenne>0 && ingredients.cayenne} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
+                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.cayenne/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
                     </tr>
                     <tr>
                         <td className='item'>Salt</td>

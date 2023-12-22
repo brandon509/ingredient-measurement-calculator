@@ -208,3 +208,9 @@ p.percent{
     font-size: 16px;
    }
  }
+
+ @media (max-width: 350px){
+  .plus, .minus{
+    top: 2px;
+  }
+ }
