@@ -44,42 +44,42 @@ export default function App () {
     }
 
     return(
-        <div className='top'>
+        <div className='th'>
           <div className='header'><h1>Measurement Calculator</h1></div>
           <div className='main'>
-            <div className='weight-input-section'>
-              <label htmlFor='weight-input' className='weight-label'>Weight</label>
-              <input id='weight-input' onChange={onChangeWeight} value={weight>0 && weight} type='number' inputMode='decimal'></input>
-              <p className='lbs'>lbs</p>
+            <div className='thing'>
+              <label for='weight' className='weightLabel'>Weight</label>
+              <input id='weight' className='inputWeight' onChange={onChangeWeight} value={weight>0 && weight} type='number'></input>
+              <p className='lbsLabel'>lbs</p>
             </div>
-            <table>
+            <table className='amountTable'>
                 <thead>
                     <tr>
                         <th>Item</th>
-                        <th className='percent-header'>Percent (%)</th>
-                        <th>Weight (oz)</th>
+                        <th className='tester'>Percent (%)</th>
+                        <th className='weightHeader'>Weight (oz)</th>
                     </tr>
                 </thead>
                 <tbody>
                   <tr>
                         <td className='item'>Salt</td>
-                        <td className='input-box'><PercentageInput name='salt' value={ingredients.salt>0 && ingredients.salt} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
-                        <td><p className='equal'>=</p><p className='calc'>{(weight*(ingredients.salt/100)).toFixed(2)*16}</p><p>oz</p></td>
+                        <td className='inputBox'><PercentageInput name='salt' value={ingredients.salt>0 && ingredients.salt} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
+                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.salt/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
                     </tr>
                     <tr>
                         <td className='item'>Pepper</td>
-                        <td className='input-box'><PercentageInput name='pepper' value={ingredients.pepper>0 && ingredients.pepper} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
-                        <td><p className='equal'>=</p><p className='calc'>{(weight*(ingredients.pepper/100)).toFixed(2)*16}</p><p>oz</p></td>
+                        <td className='inputBox'><PercentageInput name='pepper' value={ingredients.pepper>0 && ingredients.pepper} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
+                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.pepper/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
                     </tr>
                     <tr>
                         <td className='item'>Chilli</td>
-                        <td className='input-box'><PercentageInput name='chilli' value={ingredients.chilli>0 && ingredients.chilli} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
-                        <td><p className='equal'>=</p><p className='calc'>{(weight*(ingredients.chilli/100)).toFixed(2)*16}</p><p>oz</p></td>
+                        <td className='inputBox'><PercentageInput name='chilli' value={ingredients.chilli>0 && ingredients.chilli} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
+                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.chilli/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
                     </tr>
                     <tr>
                         <td className='item'>Cayenne</td>
-                        <td className='input-box'><PercentageInput name='cayenne' value={ingredients.cayenne>0 && ingredients.cayenne} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
-                        <td><p className='equal'>=</p><p className='calc'>{(weight*(ingredients.cayenne/100)).toFixed(2)*16}</p><p>oz</p></td>
+                        <td className='inputBox'><PercentageInput name='cayenne' value={ingredients.cayenne>0 && ingredients.cayenne} onChange={onChangeIngredients} onClickUp={onClickUp} onClickDown={onClickDown} /></td>
+                        <td><p className='equal'>=</p><p className='calcWeight'>{(weight*(ingredients.cayenne/100)).toFixed(2)*16}</p><p className='oz'>oz</p></td>
                     </tr>
                 </tbody>
             </table>

@@ -8,122 +8,31 @@ body{
   background: #FAFAFA;
 }
 
-p{
-  display: inline-block;
- }
-
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
 }
 
-.top{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.ingredientInput{
+   border: 1px solid #000000;
+   height: 45px;
+   width: 120px;
+   padding: 0px 16px;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   border-left: none;
+   border-right: none;
  }
 
- .header{
-  position: fixed;
-  width: 100%;
-  height: 80px;
-  background-color: #364167;
-  color: white;
-  text-align: center;
+ .ingredientInput:focus{
+    outline: none;
  }
 
- .main{
-  border-radius: 10px;
-  background: white;
-  padding: 20px 40px 60px 40px;
-  box-shadow: 0 0 0 1px rgba(33, 50, 108, 0.1);
-  margin-top: 100px;
+ .inputBox{
+   display: flex;
+   font-size: 30px;
  }
-
- .weight-label{
-  font-weight: 700;
-  margin-left: 28%;
- }
-
- #weight-input{
-  margin-bottom: 30px;
-  margin-left: 10px;
-  width: 85px;
-  height: 30px;
-  border-radius: 10px;
-  border: 1px solid #000000;
-  padding-left: 10px;
- }
-
- #weight-input, .ingredient-input:focus{
-  outline: none;
- }
-
- .lbs{
-  position: relative;
-  right: 28px;
-  color: #73796e9d;
- }
-
- table{
-  display: flex;
-  justify-content: center;
- }
-
- thead tr{
-  position: absolute;
-  display: flex;
-  gap: 60px;
- }
-
- .percent-header{
-  margin-left: 48px;
- }
-
- tbody{
-  margin-top: 30px;
- }
-
- .input-box{
-  display: flex;
-  font-size: 30px;
-}
-
-.calc{
-  width: 45px;
- }
-
- .input-top{
-  position: relative;
-}
-
-.minus{
-  cursor: pointer;
-  position: relative;
-  left: 30px;
-  top: 2.5%;
-  width: 40px;
-  height: 47px;
-  border: solid 1px black;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  font-size: 20px;
-  background: #c1e1ed;
-  border: 1px solid #000000;
-  color: #000000;
-}
-
-.ingredient-input{
-  border: 1px solid #000000;
-  height: 45px;
-  width: 120px;
-  padding: 0px 16px;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  border-left: none;
-  border-right: none;
-}
 
  .plus{
    cursor: pointer;
@@ -142,29 +51,137 @@ input[type=number]::-webkit-outer-spin-button {
    color: #000000;
  }
 
-.input-label, .equal, p.percent{
+ .minus{
+   cursor: pointer;
+   position: relative;
+   left: 30px;
+   top: 2.5%;
+   width: 40px;
+   height: 47px;
+   border: solid 1px black;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   font-size: 20px;
+   background: #c1e1ed;
+   border: 1px solid #000000;
+   color: #000000;
+ }
+
+ .amountTable{
+  display: flex;
+  justify-content: center;
+ }
+
+ tbody{
+  margin-top: 30px;
+ }
+
+ thead tr{
+  position: absolute;
+  display: flex;
+  gap: 60px;
+ }
+
+ .th{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .inputWeight{
+  margin-bottom: 30px;
+  margin-left: 10px;
+  width: 85px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+ }
+
+ .inputWeight:focus{
+  outline: none;
+ }
+
+ .lbsLabel{
+  position: relative;
+  right: 28px;
+  color: #73796e9d;
+ }
+
+ p{
+  display: inline-block;
+ }
+
+ .weightLabel{
+  font-weight: 700;
+  margin-left: 28%;
+ }
+
+ .percentage{
+  position: relative;
+  right: 75px;
+  color: #73796e9d;
+  font-size: 16px;
+ }
+
+ .calcWeight{
+  width: 45px;
+ }
+
+ .main{
+  border-radius: 10px;
+  background: white;
+  padding: 20px 40px 60px 40px;
+  box-shadow: 0 0 0 1px rgba(33, 50, 108, 0.1);
+  margin-top: 100px;
+ }
+
+ .header{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: #364167;
+  color: white;
+  text-align: center;
+ }
+
+ .tester{
+  margin-left: 48px;
+ }
+
+.inputParent{
+  position: relative;
+}
+
+.inputLabel, .equal{
+  display: none;
+}
+
+p.percent{
   display: none;
 }
 
  @media (max-width: 450px){
-
-  h1{
-    font-size: 25px;
-   }
-
    .main{
     padding: 20px 15px 60px 15px;
    }
 
-   .weight-input-section{
-    margin-left: -75px;
+   h1{
+    font-size: 25px;
+   }
+
+   .inputLabel{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    left: 75px;
+    top: -5px;
+    background: white;
+    padding: 0px 4px;
+    color: #21326c;
   }
 
-  table{
-    margin-top: -20px;
-  }
-
-  thead tr, .item{
+   thead tr, .item{
     display: none;
    }
 
@@ -174,15 +191,12 @@ input[type=number]::-webkit-outer-spin-button {
     margin-left: -15px;
   }
 
-   .input-label{
-    display: block;
-    position: absolute;
-    font-size: 12px;
-    left: 75px;
-    top: -5px;
-    background: white;
-    padding: 0px 4px;
-    color: #21326c;
+  .amountTable{
+    margin-top: -20px;
+  }
+
+  .thing{
+    margin-left: -75px;
   }
 
   p.percent{
@@ -197,9 +211,5 @@ input[type=number]::-webkit-outer-spin-button {
  @media (max-width: 395px){
   .plus, .minus{
     top: 2px;
-   }
-
-   p.percent{
-    right: 87px;
    }
  }
