@@ -48,7 +48,7 @@ export default function App () {
           <div className='header'><h1>Measurement Calculator</h1></div>
           <div className='main'>
             <div className='weight-input-section'>
-              <label for='weight-input' className='weight-label'>Weight</label>
+              <label htmlFor='weight-input' className='weight-label'>Weight</label>
               <input id='weight-input' onChange={onChangeWeight} value={weight>0 && weight} type='number' inputMode='decimal'></input>
               <p className='lbs'>lbs</p>
             </div>
