@@ -156,9 +156,9 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 20px 15px 60px 15px;
    }
 
-   .weight-input-section{
+   /* .weight-input-section{
     margin-left: -75px;
-  }
+  } */
 
   table{
     margin-top: -20px;
