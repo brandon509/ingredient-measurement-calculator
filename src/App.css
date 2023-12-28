@@ -43,7 +43,6 @@ input[type=number]::-webkit-outer-spin-button {
  .weight-label{
   font-weight: 700;
   margin-left: 28%;
-  display: inline-block;
  }
 
  #weight-input{
@@ -54,7 +53,6 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 10px;
   border: 1px solid #000000;
   padding-left: 10px;
-  display: inline-block;
  }
 
  #weight-input, .ingredient-input:focus{
@@ -65,7 +63,6 @@ input[type=number]::-webkit-outer-spin-button {
   position: relative;
   right: 28px;
   color: #73796e9d;
-  display: inline-block;
  }
 
  table{
