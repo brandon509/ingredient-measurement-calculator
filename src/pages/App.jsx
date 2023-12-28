@@ -49,7 +49,7 @@ export default function App () {
           <div className='main'>
             <div className='weight-input-section'>
               <label for='weight-input' className='weight-label'>Weight</label>
-              <input id='weight-input' onChange={onChangeWeight} value={weight>0 && weight} type='number'></input>
+              <input id='weight-input' onChange={onChangeWeight} value={weight>0 && weight} type='number' inputMode='decimal'></input>
               {/* <p className='lbs'>lbs</p> */}
             </div>
             <table>
