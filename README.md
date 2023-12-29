@@ -1,8 +1,12 @@
-# React + Vite
+# Measurement Calculator
+Calculates the weight (in oz) of each spice required to make sausages according to the percentage of each based on the base weight of the meat.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Built With
+[React](https://github.com/facebook/react)
+[Vite](https://github.com/vitejs/vite)
 
-Currently, two official plugins are available:
+Authors
+Brandon Cousins - Initial work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+License
+This project is licensed under the MIT License
