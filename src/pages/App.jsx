@@ -12,11 +12,13 @@ export default function App () {
     })
 
     const validation = (num) => {
-        if(+num > 100) return
-        if(+num < 10 && num.length > 4) return
-        if(+num.length > 5) return
+        let adjNum = num
+        if(num[0] === '0') adjNum = num.slice(1)
+        if(+adjNum > 100) return
+        if(+adjNum < 10 && adjNum.length > 4) return
+        if(adjNum.length > 5) return
 
-        return num
+        return +adjNum
     }
 
     const onChangeWeight = (e) => {
@@ -61,9 +63,8 @@ export default function App () {
           <div className='header'><h1>Measurement Calculator</h1></div>
           <div className='main'>
             <div className='weight-input-section'>
-              {/* <label htmlFor='weight-input' className='weight-label'>Weight</label> */}
-              <p className='weight-label'>Weight</p>
-              <input id='weight-input' onChange={onChangeWeight} value={weight} type='text'inputMode='decimal'></input>
+              <label htmlFor='weight-input' className='weight-label'>Weight</label>
+              <input id='weight-input' onChange={onChangeWeight} value={weight} type='number'inputMode='decimal'></input>
               <p className='lbs'>lbs</p>
             </div>
             <table>

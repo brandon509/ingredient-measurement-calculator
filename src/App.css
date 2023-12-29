@@ -12,7 +12,7 @@ p{
   display: inline-block;
  }
 
-input{
+input, button{
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
