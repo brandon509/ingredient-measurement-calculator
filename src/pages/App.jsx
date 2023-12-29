@@ -12,7 +12,7 @@ export default function App () {
     })
 
     const onChangeWeight = (e) => {
-        setWeight(e.target.value)
+        setWeight(+e.target.value)
     }
 
     const onChangeIngredients = (e) => {
@@ -49,7 +49,7 @@ export default function App () {
           <div className='main'>
             <div className='weight-input-section'>
               <label htmlFor='weight-input' className='weight-label'>Weight</label>
-              <input id='weight-input' onChange={onChangeWeight} value={weight} type='number' inputMode='decimal'></input>
+              <input id='weight-input' onChange={onChangeWeight} value={weight} type='number'inputMode='decimal'></input>
               <p className='lbs'>lbs</p>
             </div>
             <table>
