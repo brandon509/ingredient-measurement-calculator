@@ -11,16 +11,29 @@ export default function App () {
         cayenne: 0.25
     })
 
+    const validation = (num) => {
+        if(+num > 100) return
+        if(+num < 10 && num.length > 4) return
+        if(+num.length > 5) return
+
+        return num
+    }
+
     const onChangeWeight = (e) => {
-        setWeight(+e.target.value)
+        const num = validation(e.target.value)
+
+        if(num >= 0) setWeight(num)
+
     }
 
     const onChangeIngredients = (e) => {
-            if(+e.target.value > 100) return
-            setIngredients((prevState) => ({
-                ...prevState,
-                [e.target.name]: +e.target.value
-            }))
+        const num = validation(e.target.value)
+
+        if(num >= 0)
+        setIngredients((prevState) => ({
+            ...prevState,
+            [e.target.name]: +e.target.value
+        }))
     }
 
     const onClickUp = (e) => {
@@ -48,8 +61,9 @@ export default function App () {
           <div className='header'><h1>Measurement Calculator</h1></div>
           <div className='main'>
             <div className='weight-input-section'>
-              <label htmlFor='weight-input' className='weight-label'>Weight</label>
-              <input id='weight-input' onChange={onChangeWeight} value={weight} type='number'inputMode='decimal'></input>
+              {/* <label htmlFor='weight-input' className='weight-label'>Weight</label> */}
+              <p className='weight-label'>Weight</p>
+              <input id='weight-input' onChange={onChangeWeight} value={weight} type='text'inputMode='decimal'></input>
               <p className='lbs'>lbs</p>
             </div>
             <table>
