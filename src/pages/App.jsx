@@ -12,7 +12,7 @@ export default function App () {
     })
 
     const onChangeWeight = (e) => {
-        setWeight(+e.target.value)
+        setWeight(e.target.value)
     }
 
     const onChangeIngredients = (e) => {
